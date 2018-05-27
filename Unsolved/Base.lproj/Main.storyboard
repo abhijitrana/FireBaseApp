@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Tq-ug-veq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Country View-->
+        <scene sceneID="ysR-eu-1Eg">
+            <objects>
+                <viewController id="vnc-ed-sS9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i40-e6-gho">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rQY-dN-zpR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Country View" image="location" selectedImage="location" id="thL-0k-OIZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJZ-Yp-Fgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="-182"/>
+        </scene>
+        <!--Favourite-->
+        <scene sceneID="hbm-hy-bB8">
+            <objects>
+                <viewController id="eXW-rh-gss" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qqg-JB-nry">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yp5-Ay-KYS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favourite" image="fav" selectedImage="fav" id="ZVh-OR-Yn1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WP5-eD-Gpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="-182"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9VQ-R6-ASf">
+            <objects>
+                <viewController id="IlA-Ly-0wY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ixM-DZ-Kuh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xEi-tW-jp3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RaZ-fS-Sob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="-182"/>
+        </scene>
+        <!--Mysteries-->
+        <scene sceneID="mqv-Se-lUR">
+            <objects>
+                <viewController id="FZl-XY-ABl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JTi-ie-f8o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6ja-Bm-Cag">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3rm-vw-UXm">
+                                    <size key="itemSize" width="374" height="177"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="V5x-bE-mv1" customClass="MysteryCollCell" customModule="Unsolved" customModuleProvider="target">
+                                        <rect key="frame" x="0.5" y="0.0" width="374" height="177"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="177"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.66666668653488159" green="0.25791024580032296" blue="0.28583469782289878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="FZl-XY-ABl" id="cmY-SK-mc2"/>
+                                    <outlet property="delegate" destination="FZl-XY-ABl" id="9yT-0A-c8O"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6ja-Bm-Cag" firstAttribute="bottom" secondItem="kfH-6O-x8T" secondAttribute="bottom" id="C0q-tO-O7K"/>
+                            <constraint firstItem="6ja-Bm-Cag" firstAttribute="trailing" secondItem="kfH-6O-x8T" secondAttribute="trailing" id="aR2-nJ-VHW"/>
+                            <constraint firstItem="6ja-Bm-Cag" firstAttribute="leading" secondItem="kfH-6O-x8T" secondAttribute="leading" id="fVt-6J-D4W"/>
+                            <constraint firstItem="6ja-Bm-Cag" firstAttribute="top" secondItem="JTi-ie-f8o" secondAttribute="top" id="lVK-Bn-YXG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kfH-6O-x8T"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mysteries" image="mystery" selectedImage="mystery" id="fKU-Zw-o7S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hC1-5X-ysi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1250.4000000000001" y="-182.15892053973016"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="QN1-MZ-fdo">
+            <objects>
+                <tabBarController id="3Tq-ug-veq" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wni-EV-kQx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FZl-XY-ABl" kind="relationship" relationship="viewControllers" id="dw6-su-HSS"/>
+                        <segue destination="vnc-ed-sS9" kind="relationship" relationship="viewControllers" id="Dwi-vv-HVN"/>
+                        <segue destination="eXW-rh-gss" kind="relationship" relationship="viewControllers" id="f5y-M6-a2R"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGh-ya-xvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="-1104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fav" width="50" height="50"/>
+        <image name="location" width="50" height="50"/>
+        <image name="mystery" width="30" height="30"/>
+    </resources>
+</document>
