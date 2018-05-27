@@ -67,7 +67,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6ja-Bm-Cag">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.17858107642806254" green="0.17858107642806254" blue="0.17858107642806254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3rm-vw-UXm">
                                     <size key="itemSize" width="374" height="177"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -75,7 +75,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="V5x-bE-mv1" customClass="MysteryCollCell" customModule="Unsolved" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MysteryCollCell" id="V5x-bE-mv1" customClass="MysteryCollCell" customModule="Unsolved" customModuleProvider="target">
                                         <rect key="frame" x="0.5" y="0.0" width="374" height="177"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -86,8 +86,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="FZl-XY-ABl" id="cmY-SK-mc2"/>
-                                    <outlet property="delegate" destination="FZl-XY-ABl" id="9yT-0A-c8O"/>
+                                    <outlet property="dataSource" destination="FZl-XY-ABl" id="VCK-Tf-w9A"/>
+                                    <outlet property="delegate" destination="FZl-XY-ABl" id="Nv3-5B-Zk0"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -100,7 +100,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kfH-6O-x8T"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mysteries" image="mystery" selectedImage="mystery" id="fKU-Zw-o7S"/>
+                    <tabBarItem key="tabBarItem" title="Mysteries" image="mystery" selectedImage="mystery" id="fKU-Zw-o7S">
+                        <color key="badgeColor" red="0.66666668650000005" green="0.25791024579999999" blue="0.28583469779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hC1-5X-ysi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,8 +129,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fav" width="50" height="50"/>
-        <image name="location" width="50" height="50"/>
-        <image name="mystery" width="30" height="30"/>
+        <image name="fav" width="25" height="25"/>
+        <image name="location" width="25" height="25"/>
+        <image name="mystery" width="25" height="25"/>
     </resources>
 </document>

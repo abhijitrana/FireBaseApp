@@ -13,7 +13,7 @@ let yOffsetSpeed: CGFloat = 150.0
 let xOffsetSpeed: CGFloat = 100.0
 
 
-class MysteryCollCell: CollectionViewSlantedCell {
+class MysteryCollCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     private var gradient = CAGradientLayer()
